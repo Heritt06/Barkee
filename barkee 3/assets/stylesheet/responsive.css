@@ -1,0 +1,476 @@
+/* container */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1030px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1130px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1530px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1630px;
+  }
+}
+
+/* container */
+
+@media screen and (max-width: 1799px) {
+  :root {
+    --header-height: 104px;
+  }
+
+  .header-logo img {
+    width: 224px;
+  }
+
+  .custom-checkbox {
+    min-width: 124px;
+  }
+}
+
+@media screen and (max-width: 1679px) {
+}
+
+@media screen and (max-width: 1599px) {
+  .away-work-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  :root {
+    --header-height: 92px;
+  }
+
+  .header-logo img {
+    width: 208px;
+  }
+
+  .hero-form-bg {
+    width: 85%;
+  }
+
+  .hero-form-option-dog,
+  .hero-form-option-cat {
+    padding: 18px 0;
+  }
+
+  .hero-form {
+    gap: 20px;
+  }
+
+  .custom-checkbox {
+    min-width: 114px;
+    height: 98px;
+  }
+
+  .form-zip-code-container input {
+    height: 48px;
+  }
+
+  .date-input-container input {
+    height: 48px;
+  }
+
+  .size-custom-checkbox {
+    height: 48px;
+  }
+
+  .hero-submit-btn {
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  :root {
+    --text-rg: 14px;
+    --text-lg: 16px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 42px;
+    --dog-space: 200px;
+    --footer-padding-top: 214px;
+    --header-height: 84px;
+  }
+
+  .header-logo img {
+    width: 196px;
+  }
+
+  .nav-sign-in {
+    min-width: 94px;
+    border: none;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.5);
+    margin: 0px 6px;
+  }
+
+  .book-now-btn {
+    min-width: 112px;
+    padding: 12px 0;
+    border: none;
+  }
+
+  .download-now-bg-right,
+  .download-now-bg-left {
+    width: 260px;
+  }
+
+  .footer-policy-container {
+    padding: 14px 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .footer-social-handles a {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  :root {
+    --text-rg: 12px;
+    --text-lg: 14px;
+    --text-xl: 16px;
+    --text-2xl: 20px;
+    --text-3xl: 34px;
+    --space-lg: 80px;
+    --space-xl: 100px;
+    --space-2xl: 120px;
+    --space-3xl: 140px;
+    --space-4xl: 200px;
+    --dog-space: 140px;
+    --footer-padding-top: 138px;
+
+    --header-height: 68px;
+  }
+  .header-logo img {
+    width: 154px;
+  }
+
+  .nav-sign-in {
+    min-width: 80px;
+  }
+
+  .dropbtn {
+    min-width: 58px;
+  }
+
+  .nav-links-bar-icon {
+    display: block;
+  }
+
+  .nav-links-toggle {
+    display: none;
+  }
+
+  .nav-links-toggle.active {
+    right: 0;
+  }
+
+  .nav-links-toggle {
+    background-color: var(--primary);
+    position: absolute;
+    top: 100%;
+    height: 100vh;
+    width: 22%;
+    min-width: 150px;
+    right: -300px;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .hero-form-option-dog,
+  .hero-form-option-cat {
+    padding: 14px 0;
+  }
+
+  .custom-checkbox img {
+    width: 30px;
+  }
+
+  .custom-checkbox {
+    min-width: 94px;
+    height: 78px;
+  }
+
+  .hero-form {
+    gap: 14px;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.2);
+  }
+
+  .form-zip-code-container input {
+    height: 38px;
+  }
+
+  .date-input-container input {
+    height: 38px;
+  }
+
+  .size-custom-checkbox {
+    height: 38px;
+  }
+
+  .hero-submit-btn {
+    height: 38px;
+  }
+
+  .our-service-card img {
+    width: 50px;
+  }
+
+  .book-now-container h1 {
+    max-width: 434px;
+  }
+
+  .book-now-container p {
+    max-width: 398px;
+  }
+
+  .book-now-btn {
+    min-width: 78px;
+    padding: 10px 0;
+  }
+
+  .local-sitter-card {
+    max-width: 300px;
+  }
+
+  .local-sitter-card img {
+    width: 50px;
+  }
+
+  .barkee-walker-card img {
+    max-width: 176px;
+  }
+
+  .barkee-walker-card {
+    max-width: 346px;
+  }
+
+  .download-now-bg-right,
+  .download-now-bg-left {
+    width: 220px;
+  }
+
+  .download-platform img {
+    width: 60px;
+  }
+
+  .download-platform div {
+    width: 88px;
+    height: 28px;
+  }
+
+  .footer-social-handles a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  :root {
+    --space-lg: 60px;
+    --space-xl: 80px;
+    --space-2xl: 100px;
+    --space-3xl: 120px;
+    --dog-space: 114px;
+    --header-height: 58px;
+  }
+  .header-logo img {
+    width: 118px;
+  }
+
+  .form-pet-size-container .pet-size-radio-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4px;
+  }
+
+  .book-now-bg {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .book-now-container {
+    justify-content: center;
+    display: flex;
+    position: static;
+  }
+
+  .book-now-container .description-container {
+    transform: none;
+    margin: 20px;
+    position: static;
+  }
+
+  .download-now-info {
+    gap: 8px;
+  }
+
+  .download-now-container {
+    border-radius: 36px;
+  }
+
+  .download-now-bg-right,
+  .download-now-bg-left {
+    width: 184px;
+  }
+
+  .footer-logo-container {
+    max-width: 252px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .custom-checkbox {
+    min-width: 84px;
+    height: 74px;
+  }
+
+  .hero-service-radio {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .barkee-walker-card img {
+    max-width: 154px;
+  }
+
+  .barkee-walker-card {
+    max-width: 308px;
+  }
+
+  .asked-questions-heading {
+    text-align: center;
+  }
+
+  .download-now-bg-right,
+  .download-now-bg-left {
+    display: none;
+  }
+
+  .download-now-info {
+    margin: 20px;
+  }
+
+  .footer-logo-container {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-policy-container {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  :root {
+    --text-rg: 11px;
+    --text-lg: 13px;
+    --text-xl: 15px;
+    --text-2xl: 18px;
+    --text-3xl: 26px;
+    --dog-space: 104px;
+    --space-3xl: 100px;
+    --footer-padding-top: 80px;
+  }
+
+  .nav-sign-in {
+    min-width: 64px;
+  }
+
+  .date-input-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .date-input-container div {
+    width: auto;
+  }
+
+  .book-now-container {
+    text-align: center;
+  }
+
+  .footer-link-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-policy-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policy-link-list ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  :root {
+    --footer-padding-top: 58px;
+  }
+  .header-logo img {
+    width: 92px;
+  }
+
+  .nav-sign-in {
+    min-width: 56px;
+  }
+
+  .dropbtn-flag {
+    width: 16px;
+  }
+
+  .dropbtn {
+    min-width: 48px;
+  }
+}
+@media screen and (max-width: 349px) {
+  input::placeholder {
+    font-size: 14px;
+    color: gray;
+    opacity: 1;
+  }
+}
+  

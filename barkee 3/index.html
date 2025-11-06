@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/stylesheet/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/stylesheet/style.css" />
+    <link rel="stylesheet" href="/assets/stylesheet/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navigation-bar -->
+
+    <header class="container-fluid d-flex">
+      <nav class="container justify-content-between flex-center">
+        <div class="header-logo">
+          <a href="#"><img src="/assets/images/icon/logo.png" alt="logo" /></a>
+        </div>
+        <div class="nav-links flex-center gap-sm-3 gap-md-4">
+          <div class="nav-links-toggle flex-center gap-3" id="nav-links-toggle">
+            <div>
+              <a href="#" class="text-white fw-semibold text-lg"
+                >Become a Sitter</a
+              >
+            </div>
+            <div>
+              <a href="#OurService" class="text-white fw-semibold text-lg"
+                >Our Services</a
+              >
+            </div>
+          </div>
+
+          <button
+            class="nav-sign-in btn-light fw-medium text-lg py-2 rounded-pill"
+          >
+            Sign In
+          </button>
+          <!-- flag-dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="/assets/images/icon/flag.png" alt="flag" />
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="/assets/images/icon/flag2.png" alt="flag"
+                /></a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="/assets/images/icon/flag.png" alt="flag"
+                /></a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="/assets/images/icon/flag2.png" alt="flag"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <!-- flag-dropdown -->
+          <!-- <div class="dropdown">
+            <button
+              class="dropbtn flex-center cursor-pointer rounded-pill py-2 gap-1"
+              onclick="toggleDropdown()"
+            >
+              <span class="dropbtn-flag d-flex object-fit-contain">
+                <img
+                  id="selectedFlag"
+                  src="/assets/images/icon/flag.png"
+                  alt="Selected Flag"
+                />
+              </span>
+              <img src="/assets/images/icon/drop-arrow.png" alt="drop arrow" />
+            </button>
+            <div id="dropdownList" class="dropdown-content rounded-4 mt-1">
+              <img
+                src="/assets/images/icon/flag2.png"
+                alt="USA"
+                onclick="selectFlag(this)"
+              />
+              <img
+                src="/assets/images/icon/flag.png"
+                alt="UK"
+                onclick="selectFlag(this)"
+              />
+              <img
+                src="/assets/images/icon/flag2.png"
+                alt="India"
+                onclick="selectFlag(this)"
+              />
+              <img
+                src="/assets/images/icon/flag.png"
+                alt="France"
+                onclick="selectFlag(this)"
+              />
+            </div>
+          </div> -->
+          <div class="nav-links-bar-icon cursor-pointer" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navigation-bar -->
+
+    <!-- section-1 hero-form -->
+    <section class="container-fluid hero-container">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="hero-bg-container d-none col-xl-6 d-xl-block">
+            <img
+              src="/assets/images/background/hero-background.png"
+              alt="sitter and dog"
+            />
+          </div>
+          <div
+            class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 flex-center flex-column mb-5"
+          >
+            <div class="hero-form-bg">
+              <img src="/assets/images/background/hero-Dogs.png" alt="dogs" />
+            </div>
+
+            <div class="hero-form-container rounded-4">
+              <!-- <div class="hero-form-option-container d-flex"> -->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- <div
+                  class="hero-form-option-dog cursor-pointer flex-center active"
+                  onclick="toggleForm('dog')"
+                > -->
+                <li class="nav-item w-50" role="presentation">
+                  <button
+                    class="nav-link w-100 py-3 active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    <h3 class="m-0 fw-medium">Dog</h3>
+                  </button>
+                </li>
+
+                <!-- </div> -->
+                <!-- <div
+                  class="hero-form-option-cat cursor-pointer flex-center"
+                  onclick="toggleForm('cat')"
+                > -->
+                <li class="nav-item w-50" role="presentation">
+                  <button
+                    class="nav-link py-3 w-100"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    <h3 class="m-0 fw-medium">Cat</h3>
+                  </button>
+                </li>
+
+                <!-- </div> -->
+              </ul>
+              <!-- </div> -->
+              <div class="tab-content">
+                <div
+                  class="tab-pane active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <form action="#" class="hero-form active" id="dog-form">
+                    <div>
+                      <h2 class="fw-medium">
+                        Book trusted sitters and dog walkers.
+                      </h2>
+                    </div>
+
+                    <div class="row away-work-checkbox">
+                      <div class="col-xxl-7">
+                        <p class="fw-medium text-rg hero-form-heading">
+                          For When You're Away
+                        </p>
+                        <div
+                          class="d-flex gap-2 gap-sm-3 flex-wrap flex-sm-nowrap"
+                        >
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Boarding.svg"
+                                  alt="boarding"
+                                />
+                                Boarding
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/House-Sitting.svg"
+                                  alt="House-Sitting"
+                                />
+                                House Sitting
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Boarding.svg"
+                                  alt="boarding"
+                                />
+                                Drop-in Visits
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-5">
+                        <p class="fw-medium text-rg hero-form-heading">
+                          For When You're At Work
+                        </p>
+
+                        <div class="d-flex gap-2 gap-sm-3">
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Day-Care.svg"
+                                  alt="day care"
+                                />
+                                Day Care
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Dog-Walking.svg"
+                                  alt="dog walk"
+                                />
+                                Dog Walking
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between hero-service-radio"
+                    >
+                      <p class="text-rg text-black fw-medium m-0">
+                        How often do you need this service?
+                      </p>
+
+                      <div class="d-flex gap-4 gap-md-2 gap-xxl-4">
+                        <div class="flex-center">
+                          <input
+                            type="radio"
+                            id="one-time"
+                            name="service"
+                            value="one-time"
+                          />
+                          <label
+                            for="one-time"
+                            class="text-gray text-rg fw-normal cursor-pointer"
+                            >One Time</label
+                          >
+                        </div>
+                        <div class="flex-center">
+                          <input
+                            type="radio"
+                            id="Repeat-weekly"
+                            name="service"
+                            value="Repeat-weekly"
+                          />
+                          <label
+                            for="Repeat-weekly"
+                            class="text-gray text-rg fw-normal cursor-pointer"
+                            >Repeat Weekly</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-zip-code-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        Find near you
+                      </p>
+
+                      <div class="form-zip-code">
+                        <input
+                          type="text"
+                          id="zipcode"
+                          placeholder="Zip code or Postal Code"
+                          required
+                        />
+                        <img
+                          src="/assets/images/icon/keyboard.svg"
+                          class="form-input-icon d-none d-sm-block"
+                          alt="keyboard"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-date-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        For What dates?
+                      </p>
+
+                      <div
+                        class="date-input-container d-flex justify-content-between"
+                      >
+                        <div><input type="date" /></div>
+                        <div><input type="date" /></div>
+                      </div>
+                    </div>
+                    <div class="form-pet-size-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        My pet size
+                      </p>
+
+                      <div class="pet-size-radio-container">
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Small: 0 - 7kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Medium: 8 - 20kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Large: 21 - 45kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Massive 46+ kg
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      class="hero-submit-btn cursor-pointer btn-dark text-rg fw-normal"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+
+                <div
+                  class="tab-pane"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <form action="#" class="hero-form active" id="cat-form">
+                    <div>
+                      <h2 class="fw-medium">
+                        Book trusted sitters and cat walkers.
+                      </h2>
+                    </div>
+
+                    <div class="row away-work-checkbox">
+                      <div class="col-xxl-7">
+                        <p class="fw-medium text-rg hero-form-heading">
+                          For When You're Away
+                        </p>
+                        <div
+                          class="d-flex gap-2 gap-sm-3 flex-wrap flex-sm-nowrap"
+                        >
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Boarding.svg"
+                                  alt="boarding"
+                                />
+                                Boarding
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/House-Sitting.svg"
+                                  alt="House-Sitting"
+                                />
+                                House Sitting
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Boarding.svg"
+                                  alt="boarding"
+                                />
+                                Drop-in Visits
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-5">
+                        <p class="fw-medium text-rg hero-form-heading">
+                          For When You're At Work
+                        </p>
+
+                        <div class="d-flex gap-2 gap-sm-3">
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Day-Care.svg"
+                                  alt="day care"
+                                />
+                                Day Care
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label class="hero-radio-options">
+                              <input type="checkbox" />
+                              <span class="custom-checkbox text-rg fw-normal">
+                                <img
+                                  src="/assets/images/icon/Dog-Walking.svg"
+                                  alt="dog walk"
+                                />
+                                Cat Walking
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between hero-service-radio"
+                    >
+                      <p class="text-rg text-black fw-medium m-0">
+                        How often do you need this service?
+                      </p>
+
+                      <div class="d-flex gap-4 gap-md-2 gap-xxl-4">
+                        <div class="flex-center">
+                          <input type="radio" name="service" value="one-time" />
+                          <label
+                            for="one-time"
+                            class="text-gray text-rg fw-normal cursor-pointer"
+                            >One Time</label
+                          >
+                        </div>
+                        <div class="flex-center">
+                          <input
+                            type="radio"
+                            name="service"
+                            value="Repeat-weekly"
+                          />
+                          <label
+                            for="Repeat-weekly"
+                            class="text-gray text-rg fw-normal cursor-pointer"
+                            >Repeat Weekly</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-zip-code-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        Find near you
+                      </p>
+
+                      <div class="form-zip-code">
+                        <input
+                          type="text"
+                          placeholder="Zip code or Postal Code"
+                          required
+                        />
+                        <img
+                          src="/assets/images/icon/keyboard.svg"
+                          class="form-input-icon d-none d-sm-block"
+                          alt="keyboard"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-date-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        For What dates?
+                      </p>
+
+                      <div
+                        class="date-input-container d-flex justify-content-between"
+                      >
+                        <div><input type="date" /></div>
+                        <div><input type="date" /></div>
+                      </div>
+                    </div>
+                    <div class="form-pet-size-container">
+                      <p
+                        class="text-rg text-black fw-medium text-rg hero-form-heading"
+                      >
+                        My pet size
+                      </p>
+
+                      <div class="pet-size-radio-container">
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Small: 0 - 7kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Medium: 8 - 20kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Large: 21 - 45kg
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label class="pet-size-options">
+                            <input type="checkbox" />
+                            <span
+                              class="size-custom-checkbox text-rg fw-normal"
+                            >
+                              Massive 46+ kg
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      class="hero-submit-btn cursor-pointer btn-dark text-rg fw-normal"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-1 hero-form -->
+
+    <!-- section-2 our-service -->
+    <section class="container-fluid space-3xl-t space-3xl-b" id="OurService">
+      <div class="container">
+        <h1 class="fw-semibold heading">Our Services</h1>
+
+        <div class="gap-2 d-flex flex-wrap justify-content-center">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-2 our-service-card"
+          >
+            <div class="mb-2">
+              <img
+                src="/assets/images/background/our-sevice-img1.svg"
+                alt="Boarding"
+              />
+            </div>
+
+            <h3 class="fw-semibold m-0">Boarding</h3>
+            <div>
+              <p class="text-center text-gray line-ht-medium text-rg fw-normal">
+                Your pets stay overnight in your sitter’s home. They’ll be
+                treated like part of the family in a comfortable environment.
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-2 our-service-card"
+          >
+            <div class="mb-2">
+              <img
+                src="/assets/images/background/our-sevice-img2.svg"
+                alt="House Sitting"
+              />
+            </div>
+
+            <h3 class="fw-semibold m-0">House Sitting</h3>
+            <div>
+              <p class="text-center text-gray line-ht-medium text-rg fw-normal">
+                Your sitter takes care of your pets and your home. Your pets
+                will get all the attention they need without leaving home.
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-2 our-service-card"
+          >
+            <div class="mb-2">
+              <img
+                src="/assets/images/background/our-sevice-img3.png"
+                alt="Dog Walking"
+              />
+            </div>
+
+            <h3 class="fw-semibold m-0">Dog Walking</h3>
+            <div>
+              <p class="text-center text-gray line-ht-medium text-rg fw-normal">
+                Your dog gets a walk around your neighborhood. Perfect for busy
+                days and dogs with extra energy to burn.
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-2 our-service-card"
+          >
+            <div class="mb-2">
+              <img
+                src="/assets/images/background/our-sevice-img4.png"
+                alt="Drop in Visits"
+              />
+            </div>
+
+            <h3 class="fw-semibold m-0">Drop-in Visits</h3>
+            <div>
+              <p class="text-center text-gray line-ht-medium text-rg fw-normal">
+                Pawsome care for your furry friend! Our drop-in visits ensure
+                they get the love and attention they deserve.
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-2 our-service-card"
+          >
+            <div class="mb-2">
+              <img
+                src="/assets/images/background/our-sevice-img5.svg"
+                alt="Doggy Day Care"
+              />
+            </div>
+
+            <h3 class="fw-semibold m-0">Doggy Day Care $ Visit</h3>
+            <div>
+              <p class="text-center text-gray line-ht-medium text-rg fw-normal">
+                Your dog spends the day at your sitter’s home. Drop them off in
+                the morning and pick up a happy pup in the evening.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-2 our-service -->
+
+    <!-- section-3 book now -->
+    <section class="container-fluid space-2xl-b">
+      <div class="book-now-area">
+        <div class="row book-now">
+          <div class="col-lg-6 p-0 book-now-bg">
+            <img
+              src="/assets/images/background/discount-img.png"
+              alt="dog with sitter"
+              class="w-100 book-now-bg"
+            />
+          </div>
+          <div class="col-lg-6 p-0 book-now-container">
+            <div class="description-container">
+              <h1 class="fw-semibold text-white line-ht-medium mb-1">
+                Sign up now and get 30% off your first Booking
+              </h1>
+              <p class="text-white text-rg fw-medium line-ht-medium">
+                Experience the best care for your furry with our professional
+                dog sitting and walking services.
+              </p>
+              <button
+                class="btn-light fw-medium mt-2 rounded-pill book-now-btn text-rg"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-3 book now -->
+
+    <!-- section-4 local-sitters -->
+    <section class="container-fluid space-xl-b">
+      <h1 class="fw-bold heading">Meet Our Local Sitters</h1>
+      <div
+        class="container d-flex gap-4 gap-md-5 justify-content-center flex-wrap"
+      >
+        <div
+          class="local-sitter-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-4"
+        >
+          <img
+            src="/assets/images/background/magnify-glass.png"
+            alt="magnify-glass"
+            class="mb-xl-3 mb-2"
+          />
+          <h3 class="m-0 fw-semibold">Search</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              Read verified reviews by pet parents like you choose a sitter
+              who’s a great match for you and your pets.
+            </p>
+          </div>
+        </div>
+        <div
+          class="local-sitter-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-4"
+        >
+          <img
+            src="/assets/images/background/contact.png"
+            alt="contact-book"
+            class="mb-xl-3 mb-2"
+          />
+          <h3 class="m-0 fw-semibold">Book & Pay</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              No cash or checks needed. We make it simple to book and make
+              secured payments through our website or app.
+            </p>
+          </div>
+        </div>
+        <div
+          class="local-sitter-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-4"
+        >
+          <img
+            src="/assets/images/background/paw.png"
+            alt="paw"
+            class="mb-xl-3 mb-2"
+          />
+          <h3 class="m-0 fw-semibold">Relax</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              Your pets are in great hands with a loving sitter. Plus your
+              booking is backed by 24/7 Support and the Barkee Guarantee.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-4 local-sitters -->
+
+    <!-- section-5 barkee-walkers -->
+    <section class="container-fluid space-2xl-b">
+      <h1 class="fw-bold heading">Meet Our Local Sitters</h1>
+      <div
+        class="container d-flex gap-4 gap-md-5 justify-content-center flex-wrap"
+      >
+        <div
+          class="barkee-walker-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-xl-5 p-3"
+        >
+          <img
+            src="/assets/images/background/barkee-walker-img1.png"
+            alt="barkee-walker"
+            class="mb-3"
+          />
+          <h3 class="m-0 fw-semibold">Search For A Dog Walker</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              Step aside, boredom! Our dog walking service brings joy and
+              excitement to every stroll
+            </p>
+          </div>
+        </div>
+        <div
+          class="barkee-walker-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-xl-5 p-3"
+        >
+          <img
+            src="/assets/images/background/barkee-walker-img3.png"
+            alt="barkee-walker"
+            class="mb-3"
+          />
+          <h3 class="m-0 fw-semibold">Organize a free meet</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              Inviting all furry friends and their humans to our free dog meet!
+              Let's wag, sniff, and play together
+            </p>
+          </div>
+        </div>
+        <div
+          class="barkee-walker-card d-flex flex-column gap-2 justify-content-center align-items-center text-center p-xl-5 p-3"
+        >
+          <img
+            src="/assets/images/background/barkee-walker-img2.png"
+            alt="barkee-walker"
+            class="mb-3"
+          />
+          <h3 class="m-0 fw-semibold">Confirm Booking</h3>
+          <div>
+            <p class="text-gray text-lg fw-medium line-ht-medium">
+              Ready to make your dog's day? Confirm their booking now and let
+              the excitement begin!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 barkee-walkers -->
+
+    <!-- section-6 asked-questions -->
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="asked-questions-heading">
+              <h1 class="fw-bold">Frequently Asked Questions</h1>
+              <p class="text-rg text-black fw-normal line-ht-medium">
+                Find answer to common questions about our dog care services,
+                booking process, and safety measures.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-0">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-semibold text-lg"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    How do i book?
+                  </button>
+                </h3>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Booking our dog care services is easy. Simply visit our
+                    website, select the desired service, choose the date and
+                    time, and proceed to checkout.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-semibold text-lg"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What are your rates?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Corrupti, nam aliquid at assumenda, architecto officiis amet
+                    debitis commodi excepturi, doloribus fugit. Excepturi
+                    nostrum esse assumenda fugiat eius veritatis eos totam?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-semibold text-lg"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Are you insures?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deserunt dolore, blanditiis velit libero quam reiciendis
+                    sequi similique dolores quos sed voluptatem! Reiciendis
+                    ipsum blanditiis iusto enim libero quod, et rem!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-semibold text-lg"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Do you offer dog walking?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quo, doloribus! Odit modi dolorum at eius quam tempora aut
+                    eveniet deleniti ullam cupiditate quisquam, sit asperiores
+                    in nemo quis itaque porro.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-6 asked-questions -->
+
+    <!-- section-7 download -->
+    <section class="container-fluid">
+      <div class="download-now-area container position-relative">
+        <img
+          src="/assets/images/background/download-Dog.png"
+          alt="dog"
+          class="position-absolute"
+        />
+
+        <div
+          class="download-now-container d-flex justify-content-center justify-content-md-between align-items-center w-100"
+        >
+          <div class="download-now-bg-left">
+            <img
+              src="/assets/images/background/download-bg1.svg"
+              alt="dog's steps"
+            />
+          </div>
+          <div class="download-now-info my-3 my-lg-4 flex-center">
+            <h1 class="text-white fw-bold text-center">Download Barkee Now!</h1>
+
+            <div class="download-now-description-container text-center">
+              <p class="fw-medium text-rg text-white line-ht-medium m-0">
+                Be the first one to explore and get rewarded one of the best
+                application
+              </p>
+            </div>
+            <div class="download-platform d-flex gap-2">
+              <div class="flex-center">
+                <a href="#" class="flex-center"
+                  ><img
+                    src="/assets/images/background/app-store.png"
+                    alt="app store"
+                /></a>
+              </div>
+              <div class="flex-center">
+                <a href="#" class="flex-center"
+                  ><img
+                    src="/assets/images/background/play-store.png"
+                    alt="play store"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="download-now-bg-right">
+            <img
+              src="/assets/images/background/download-bg2.svg"
+              alt="dog paw"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-7 download -->
+
+    <!-- footer -->
+    <footer class="container-fluid p-0">
+      <div class="footer">
+        <div class="footer-link-container">
+          <div
+            class="footer-link-container container d-flex justify-content-sm-between mb-4 flex-wrap"
+          >
+            <div class="footer-logo-container d-flex flex-column gap-3">
+              <div>
+                <a href="#hero"
+                  ><img
+                    src="/assets/images/background/footer-logo.png"
+                    alt="logo"
+                /></a>
+              </div>
+              <div>
+                <p class="fw-medium text-rg line-ht-medium text-black m-0">
+                  We provide the best service for your pets. Please come and
+                  visit our shop.
+                </p>
+              </div>
+              <div class="footer-social-handles">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-link-list d-flex flex-column gap-2">
+              <h4 class="fw-semibold">Services</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Walking</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">
+                      Daily Drop-ins
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Pet sittings</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Training</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-link-list d-flex flex-column gap-2">
+              <h4 class="fw-semibold">Popular Locations</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">San Francisco</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Los Angeles</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Chicago</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">New York</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Athens Greece</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-link-list d-flex flex-column gap-2">
+              <h4 class="fw-semibold">Apply</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">
+                      Become a Dog Walker
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="text-black text-rg fw-normal">Careers</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-policy-area">
+          <div
+            class="footer-policy-container flex-wrap d-flex align-items-center justify-content-center container"
+          >
+            <div>
+              <p class="fw-medium text-lg m-0">
+                © 2024 barkee, Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="policy-link-list">
+              <ul class="">
+                <li>
+                  <a href="#"
+                    ><p class="fw-medium text-rg m-0">Privacy Policy</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p class="fw-medium text-rg m-0">Terms & Conditions</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p class="fw-medium text-rg m-0">Transparency</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p class="fw-medium text-rg m-0">
+                      Notice to CA Residents
+                    </p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- scripts -->
+    <script src="/assets/script/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/script/countrydrop.js"></script>
+    <script src="/assets/script/form-toggle.js"></script>
+    <script src="/assets/script/nav-toggle.js"></script>
+  </body>
+</html>
